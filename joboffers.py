@@ -14,10 +14,10 @@ import os
 os.chdir('.')
 
 #modify links with own RSS feed
-careerjet_ict = 'http://rss.careerjet.it/rss?l=Italia&lid=41162&c=informatica-telecomunicazioni'
-monster_ict = 'http://rss.jobsearch.monster.com/rssquery.ashx?rad_units=km&cy=IT&pp=25&sort=rv.di.dt&occ=660.11904&occ=660.11772&occ=660.11970&occ=660.11979&occ=660.11969&occ=660.11996&occ=660.11787&occ=660.11771&occ=660.12005&occ=660.11774&occ=660.11841&occ=660.11848&occ=660.11754&occ=660.11882&occ=660.11987&baseurl=offerte-lavoro.monster.it'
+rss_feed_1 = 'your_rss_feed_url'
+rss_feed_2 = 'your_other_rss_feed_url'
 
-urls = [careerjet_ict, monster_ict]
+urls = [rss_feed_1, rss_feed_2]
 
 #output saved as JobALERT-datetime.txt
 fileOut = 'JobALERT-'+str(datetime.now().strftime('%d-%m-%Y-%H-%M'))+'.txt'
